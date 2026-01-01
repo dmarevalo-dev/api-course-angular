@@ -4,3 +4,5 @@
 2. Ejecutan npm install para bajar las dependencias
 3. En controllers/tracks.js, modifican a sus canciones
 4. Ejecutan con node app.js
+
+# Si algo les explota, me avisan xd
