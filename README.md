@@ -5,4 +5,4 @@
 3. En controllers/tracks.js, modifican a sus canciones
 4. Ejecutan con node app.js
 
-# Si algo les explota, me avisan xd
+Nota: Si algo les explota, me avisan xd
