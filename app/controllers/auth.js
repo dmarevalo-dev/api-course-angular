@@ -1,13 +1,13 @@
-// const { httpError } = require('./helpers/handleError');
-// const { encrypt, compare } = require('./helpers/handleBcrypt');
-// const { tokenSign } = require('./helpers/generateToken');
+const { httpError } = require('../helpers/handleError');
+const { encrypt, compare } = require('../helpers/handleBcrypt');
+const { tokenSign } = require('../helpers/generateToken');
 const userModel = require('../models/users');
 
 //TODO: Login!
 const loginCtrl = async (req, res) => {
     try {
         const mockUser = {
-            name: 'Ricardo',
+            name: 'Diego',
             email: 'test@email.com',
             password: '12345678',
             avatar: 'https://i.imgur.com/0mZ4PUR.png'
@@ -15,7 +15,7 @@ const loginCtrl = async (req, res) => {
 
         const { email, password } = req.body;
 
-        if (mockUser.email !== email) {
+        if (email !== 'test@email.com') {
             res.status(404);
             res.send({ error: 'User not found' });
             return;
@@ -35,11 +35,11 @@ const loginCtrl = async (req, res) => {
         }
 
         if (!checkPassword) {
-    res.status(409);
-    res.send({
-        error: 'Invalid password'
-    });
-    return;
+        res.status(409);
+        res.send({
+            error: 'Invalid password'
+        });
+        return;
 }
 
     } catch (e) {

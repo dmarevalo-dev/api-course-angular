@@ -1,4 +1,4 @@
-//const { httpError } = require('./helpers/handleError');
+const { httpError } = require('../helpers/handleError');
 const userModel = require('../models/users');
 const PORT = process.env.PORT || 3600;
 const URL_PUBLIC = process.env.URL_PUBLIC || '/';
@@ -80,6 +80,70 @@ const getItems = async (req, res) => {
             "name": "Radiohead",
             "nickname": "Radiohead",
             "nationality": "UK"
+            },
+            "duration": {
+            "start": 0,
+            "end": 270
+            },
+            "url": `${URL_PUBLIC}/track.mp3`
+        },
+        {
+            "_id": 5,
+            "name": "El Animal",
+            "album": "El Nervio del Volcán",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/c/c0/El_nervio_del_volcan.jpg",
+            "artist": {
+            "name": "Caifanes",
+            "nickname": "Caifanes",
+            "nationality": "MX"
+            },
+            "duration": {
+            "start": 0,
+            "end": 270
+            },
+            "url": `${URL_PUBLIC}/track.mp3`
+        },
+        {
+            "_id": 6,
+            "name": "When I'm Sixty Four",
+            "album": "Sgt. Pepper's Lonely Hearts Club Band",
+            "cover": "https://akamai.sscdn.co/letras/360x360/albuns/9/8/b/4/2662.jpg",
+            "artist": {
+            "name": "The Beatles",
+            "nickname": "The Beatles",
+            "nationality": "UK"
+            },
+            "duration": {
+            "start": 0,
+            "end": 270
+            },
+            "url": `${URL_PUBLIC}/track.mp3`
+        },
+        {
+            "_id": 7,
+            "name": "Perdonar Es Divino",
+            "album": "Bocanada",
+            "cover": "https://akamai.sscdn.co/letras/360x360/albuns/1/2/5/7/2183651712605467.jpg",
+            "artist": {
+            "name": "Gustavo Cerati",
+            "nickname": "Gustavo Cerati",
+            "nationality": "AR"
+            },
+            "duration": {
+            "start": 0,
+            "end": 270
+            },
+            "url": `${URL_PUBLIC}/track.mp3`
+        },
+        {
+            "_id": 8,
+            "name": "Nutshell - Unplugged",
+            "album": "Unplugged",
+            "cover": "https://akamai.sscdn.co/letras/360x360/albuns/2/9/8/f/532.jpg",
+            "artist": {
+            "name": "Alice in Chains",
+            "nickname": "Alice in Chains",
+            "nationality": "US"
             },
             "duration": {
             "start": 0,
